@@ -49,7 +49,7 @@ class LessonApiTestCase(APITestCase):
         
         
     def test_get_lessons(self):
-        url = reverse('Lesson-list')
+        url = reverse('Lessons-list')
         self.client.force_login(self.user2)
         response = self.client.get(url)
         serializer_data = LessonSerializer([self.lesson, self.lesson2], many=True).data
@@ -58,7 +58,7 @@ class LessonApiTestCase(APITestCase):
         
         
     def test_get_lessons_by_fake_user(self):
-        url = reverse('Lesson-list')
+        url = reverse('Lessons-list')
         self.client.force_login(self.fake_user)
         response = self.client.get(url)
         self.assertEqual(status.HTTP_200_OK, response.status_code)

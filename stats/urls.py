@@ -1,9 +1,9 @@
 from rest_framework.routers import SimpleRouter
-from market.views import LessonViewSet
+from stats.views import ProductStatsViewSet
 
 router = SimpleRouter()
 
-router.register('lessons', LessonViewSet, basename='Lessons')
+router.register('', ProductStatsViewSet, basename='stats')
 
 urlpatterns = []
 
