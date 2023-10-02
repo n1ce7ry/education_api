@@ -1,2 +1,2 @@
 ## ERD
-![alt text](education_erd.png)
+![alt text](docs/education_erd.png)

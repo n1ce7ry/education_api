@@ -17,4 +17,3 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-education_erd.png

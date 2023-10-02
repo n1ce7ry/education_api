@@ -8,7 +8,7 @@ class Product(models.Model):
     have_access = models.ManyToManyField(
         User,
         through='UserProductRelation',
-        related_name='access'
+        related_name='access',
     )
 
     def __str__(self):
@@ -20,6 +20,11 @@ class Lesson(models.Model):
     video_link = models.CharField(max_length=600)
     duration_in_seconds = models.IntegerField()
     product = models.ManyToManyField(Product, related_name='course')
+    user_action = models.ManyToManyField(
+        User,
+        through='UserLessonRelation',
+        related_name='user_action'
+    )
 
     def __str__(self):
         return self.title
