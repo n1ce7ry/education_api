@@ -1,11 +1,6 @@
-# Not implemented:
- * Unit test for stats app
- * Second api
- * I haven't found an optimal way how to output status information and viewing time for the first api
-
-## Working api endpoints:
- * api/lessons/
- * api/stats/ (Partially)
+## TO DO:
+* Add a swagger
+* Test the first api
 
 ## ERD
 ![alt text](docs/images/education_erd.png)

@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
 
-    'market.apps.MarketConfig',
-    'stats.apps.StatsConfig',
+    'catalog',
+    'lessons',
 ]
 
 MIDDLEWARE = [
