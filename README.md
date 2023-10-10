@@ -1,6 +1,6 @@
 ## TO DO:
 * Add a swagger
-* Test the first api
+* Unit testing
 
 ## ERD
 ![alt text](docs/images/education_erd.png)
